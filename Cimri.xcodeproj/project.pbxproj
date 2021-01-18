@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		30C7A125EAA6F36717D1D66D /* Pods_Cimri.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8797E7CE3CDA6BB4C8819FCC /* Pods_Cimri.framework */; };
-		6B21A542257191F500DED1BC /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B21A541257191F500DED1BC /* RequestManager.swift */; };
+		6B21A542257191F500DED1BC /* RequestManager+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B21A541257191F500DED1BC /* RequestManager+Alamofire.swift */; };
 		6B21A5462571928700DED1BC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B21A5452571928700DED1BC /* API.swift */; };
-		6B21A54A257193CC00DED1BC /* deneme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B21A549257193CC00DED1BC /* deneme.swift */; };
+		6B21A54A257193CC00DED1BC /* CurrencyRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B21A549257193CC00DED1BC /* CurrencyRequestManager.swift */; };
 		6B21A54D257194D300DED1BC /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B21A54C257194D300DED1BC /* CurrencyModel.swift */; };
 		6B55A668257189D8003A14AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B55A667257189D8003A14AE /* AppDelegate.swift */; };
 		6B55A66A257189D8003A14AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B55A669257189D8003A14AE /* SceneDelegate.swift */; };
@@ -19,13 +19,15 @@
 		6B55A671257189DA003A14AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B55A670257189DA003A14AE /* Assets.xcassets */; };
 		6B55A674257189DA003A14AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B55A672257189DA003A14AE /* LaunchScreen.storyboard */; };
 		6B55A6B425718E23003A14AE /* CellHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B55A6B325718E23003A14AE /* CellHelper.swift */; };
+		6B88517325B64E60003568AF /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B88517125B64E60003568AF /* CurrencyTableViewCell.swift */; };
+		6B88517425B64E60003568AF /* CurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B88517225B64E60003568AF /* CurrencyTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3049717EB58302570E7C7605 /* Pods-Cimri.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cimri.debug.xcconfig"; path = "Target Support Files/Pods-Cimri/Pods-Cimri.debug.xcconfig"; sourceTree = "<group>"; };
-		6B21A541257191F500DED1BC /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		6B21A541257191F500DED1BC /* RequestManager+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RequestManager+Alamofire.swift"; sourceTree = "<group>"; };
 		6B21A5452571928700DED1BC /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		6B21A549257193CC00DED1BC /* deneme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deneme.swift; sourceTree = "<group>"; };
+		6B21A549257193CC00DED1BC /* CurrencyRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRequestManager.swift; sourceTree = "<group>"; };
 		6B21A54C257194D300DED1BC /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
 		6B55A664257189D8003A14AE /* Cimri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cimri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B55A667257189D8003A14AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		6B55A673257189DA003A14AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B55A675257189DA003A14AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B55A6B325718E23003A14AE /* CellHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellHelper.swift; sourceTree = "<group>"; };
+		6B88517125B64E60003568AF /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		6B88517225B64E60003568AF /* CurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyTableViewCell.xib; sourceTree = "<group>"; };
 		8797E7CE3CDA6BB4C8819FCC /* Pods_Cimri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cimri.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		938F68B861B7BB362E173C3C /* Pods-Cimri.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cimri.release.xcconfig"; path = "Target Support Files/Pods-Cimri/Pods-Cimri.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,8 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				6B21A5452571928700DED1BC /* API.swift */,
-				6B21A541257191F500DED1BC /* RequestManager.swift */,
-				6B21A549257193CC00DED1BC /* deneme.swift */,
+				6B21A541257191F500DED1BC /* RequestManager+Alamofire.swift */,
+				6B21A549257193CC00DED1BC /* CurrencyRequestManager.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -93,7 +97,7 @@
 			children = (
 				6B55A6B025718DE4003A14AE /* Storyboards */,
 				6B55A6AD25718DA1003A14AE /* Models */,
-				6B55A6AE25718DA9003A14AE /* Views */,
+				6B88516E25B64AAE003568AF /* Views */,
 				6B55A6AF25718DB9003A14AE /* Controllers */,
 				6B55A6B225718E05003A14AE /* Helpers */,
 				6B21A540257191C200DED1BC /* API */,
@@ -111,13 +115,6 @@
 				6B21A54C257194D300DED1BC /* CurrencyModel.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		6B55A6AE25718DA9003A14AE /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		6B55A6AF25718DB9003A14AE /* Controllers */ = {
@@ -151,6 +148,15 @@
 				6B55A6B325718E23003A14AE /* CellHelper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6B88516E25B64AAE003568AF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B88517225B64E60003568AF /* CurrencyTableViewCell.xib */,
+				6B88517125B64E60003568AF /* CurrencyTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		6C88BAFC441A90F5EAE00F6C /* Pods */ = {
@@ -221,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B88517425B64E60003568AF /* CurrencyTableViewCell.xib in Resources */,
 				6B55A674257189DA003A14AE /* LaunchScreen.storyboard in Resources */,
 				6B55A671257189DA003A14AE /* Assets.xcassets in Resources */,
 				6B55A66F257189D8003A14AE /* Main.storyboard in Resources */,
@@ -276,13 +283,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B21A542257191F500DED1BC /* RequestManager.swift in Sources */,
-				6B21A54A257193CC00DED1BC /* deneme.swift in Sources */,
+				6B21A542257191F500DED1BC /* RequestManager+Alamofire.swift in Sources */,
+				6B21A54A257193CC00DED1BC /* CurrencyRequestManager.swift in Sources */,
 				6B21A54D257194D300DED1BC /* CurrencyModel.swift in Sources */,
 				6B55A66C257189D8003A14AE /* ViewController.swift in Sources */,
 				6B55A668257189D8003A14AE /* AppDelegate.swift in Sources */,
 				6B55A66A257189D8003A14AE /* SceneDelegate.swift in Sources */,
 				6B21A5462571928700DED1BC /* API.swift in Sources */,
+				6B88517325B64E60003568AF /* CurrencyTableViewCell.swift in Sources */,
 				6B55A6B425718E23003A14AE /* CellHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

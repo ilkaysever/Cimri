@@ -16,44 +16,37 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setDelegates()
-        createRequest()
+        fetchCurrencies()
     }
     
     private func setDelegates() {
         currencyTableView.delegate = self
         currencyTableView.dataSource = self
+        currencyTableView.register(CurrencyTableViewCell.self)
     }
     
-    private func createRequest() {
-        let url = URL(string: "http://data.fixer.io/api/latest?access_key=def00ce35213bc2c9791fe578840616c")!
-        
-        let session = URLSession.shared
-        
-        let task = session.dataTask(with: url) { (data, response, error) in
-            if error != nil {
-                print(error!)
+    func fetchCurrencies() {
+        RequestManager.shared.getCurrency(accesKey: "def00ce35213bc2c9791fe578840616c") { (currency, error) in
+            if currency != nil {
+                self.currencyData = currency
             } else {
-                if data != nil {
-                    do {
-                        let decoder = JSONDecoder()
-                        let response = try decoder.decode(CurrencyModel.self, from: data!)
-                        print(response)
-                    } catch {
-                        print("****************error****************")
-                    }
-                }
+                print(error!)
             }
+            
         }
-        task.resume()
     }
 }
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
+        //return currencyData.rates.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //let cell: CurrencyTableViewCell = tableView.dequeueReusableCell(for: indexPath)
+        //cell.fillCurrencyCell(responseCurrency: currencyData)
+        //return cell
         return UITableViewCell()
     }
     
