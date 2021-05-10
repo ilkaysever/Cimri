@@ -101,10 +101,8 @@
 				6B55A6AF25718DB9003A14AE /* Controllers */,
 				6B55A6B225718E05003A14AE /* Helpers */,
 				6B21A540257191C200DED1BC /* API */,
-				6B55A6B125718DF6003A14AE /* Assets */,
-				6B55A675257189DA003A14AE /* Info.plist */,
-				6B55A667257189D8003A14AE /* AppDelegate.swift */,
-				6B55A669257189D8003A14AE /* SceneDelegate.swift */,
+				C0C48F0F2649A65E006B47EB /* Sources */,
+				C0C48F0E2649A646006B47EB /* Resources */,
 			);
 			path = Cimri;
 			sourceTree = "<group>";
@@ -166,6 +164,24 @@
 				938F68B861B7BB362E173C3C /* Pods-Cimri.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C0C48F0E2649A646006B47EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6B55A6B125718DF6003A14AE /* Assets */,
+				6B55A675257189DA003A14AE /* Info.plist */,
+				6B55A667257189D8003A14AE /* AppDelegate.swift */,
+				6B55A669257189D8003A14AE /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C0C48F0F2649A65E006B47EB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,7 +457,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2B2355P26S;
-				INFOPLIST_FILE = Cimri/Info.plist;
+				INFOPLIST_FILE = Cimri/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,7 +477,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2B2355P26S;
-				INFOPLIST_FILE = Cimri/Info.plist;
+				INFOPLIST_FILE = Cimri/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
